@@ -1,3 +1,0 @@
-/home/sandeep/learn/udacity/rse/myrobot/build/CMakeFiles/rebuild_cache.dir
-/home/sandeep/learn/udacity/rse/myrobot/build/CMakeFiles/edit_cache.dir
-/home/sandeep/learn/udacity/rse/myrobot/build/CMakeFiles/hello.dir
