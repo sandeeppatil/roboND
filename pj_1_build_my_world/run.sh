@@ -1,0 +1,1 @@
+gazebo -u --verbose world/myWorld.world 
