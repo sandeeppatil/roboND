@@ -1,5 +1,6 @@
 @startuml talker_listener
 
+frame "Publisher/Subscriber" {
 class talker <<node>> {
   +publisher("topic")
   +timer
@@ -12,5 +13,21 @@ class listener <<node>> {
 }
 
 talker -right-> listener
+}
+
+frame "Service/Client" {
+class service <<node>> {
+  +add_two_ints service
+  +add_two_ints_callback()
+}
+
+class client <<node>> {
+  +add_two_ints client
+  +send_request()
+}
+
+client -left-> service : request
+service -right-> client : response
+}
 
 @enduml
