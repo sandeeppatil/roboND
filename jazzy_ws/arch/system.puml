@@ -1,0 +1,16 @@
+@startuml talker_listener
+
+class talker <<node>> {
+  +publisher("topic")
+  +timer
+  +timer_callback()
+}
+
+class listener <<node>> {
+  +subscription("topic")
+  +listner_callback()
+}
+
+talker -right-> listener
+
+@enduml
